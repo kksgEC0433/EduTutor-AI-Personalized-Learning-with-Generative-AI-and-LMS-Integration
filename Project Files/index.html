@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduTutor AI: Personalized Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>EduTutor AI</h1>
+        <p>Personalized Learning with Generative AI and LMS Integration</p>
+    </header>
+
+    <main>
+        <!-- Login Section -->
+        <section id="login-section">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                <button type="submit">Login</button>
+                <p>or</p>
+                <button type="button" id="google-login">Login with Google Classroom</button>
+            </form>
+        </section>
+
+        <!-- Student Dashboard -->
+        <section id="student-dashboard" style="display:none;">
+            <h2>Welcome, <span id="student-name"></span></h2>
+            <button id="sync-courses">Sync Courses from Google Classroom</button>
+            <div id="courses-list"></div>
+            <button id="start-diagnostic">Take Diagnostic Test</button>
+            <div id="quiz-section"></div>
+            <div id="feedback-section"></div>
+        </section>
+
+        <!-- Educator Dashboard -->
+        <section id="educator-dashboard" style="display:none;">
+            <h2>Educator Dashboard</h2>
+            <div id="students-performance">
+                <!-- Real-time quiz performance, history, scores, last topics, Pinecone insights will be dynamically rendered here -->
+            </div>
+        </section>
+
+        <!-- Features Overview -->
+        <section id="features">
+            <h2>Platform Features</h2>
+            <ul>
+                <li><strong>Personalized Learning:</strong> Dynamic quizzes and instant feedback using IBM Watsonx & Granite LLM.</li>
+                <li><strong>Educator Insights:</strong> Real-time dashboards with Pinecone-powered analytics.</li>
+                <li><strong>Adaptive Quizzing:</strong> Diagnostic tests and adaptive question generation.</li>
+                <li><strong>Google Classroom Integration:</strong> Seamless course and student data sync.</li>
+                <li><strong>Secure Login:</strong> Email/password and Google authentication options.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 EduTutor AI. Powered by IBM Cloud, Watsonx, Granite, and Pinecone.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
