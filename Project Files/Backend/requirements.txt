@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pydantic
+requests
+torch
+torchvision
+torchaudio
+accelerate
+transformers
