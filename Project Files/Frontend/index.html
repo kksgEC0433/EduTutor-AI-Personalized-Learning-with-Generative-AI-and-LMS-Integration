@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EduTutor AI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>EduTutor AI - Powered by Watsonx & Granite</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Generate Quiz</h2>
+            <form id="quiz-form">
+                <input type="text" id="quiz-topic" placeholder="Enter topic (e.g., Algebra)" required>
+                <select id="quiz-difficulty">
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+                <button type="submit">Generate Quiz</button>
+            </form>
+            <div id="quiz-result"></div>
+        </section>
+        <section>
+            <h2>Diagnostic Test</h2>
+            <form id="diagnostic-form">
+                <select id="diagnostic-level">
+                    <option value="beginner">Beginner</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+                <button type="submit">Generate Diagnostic</button>
+            </form>
+            <div id="diagnostic-result"></div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

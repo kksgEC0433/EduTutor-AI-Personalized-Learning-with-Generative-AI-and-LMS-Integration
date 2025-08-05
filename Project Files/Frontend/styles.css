@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f8fa;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #0062ff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+main {
+    max-width: 600px;
+    background: #fff;
+    margin: 40px auto;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.09);
+}
+section {
+    margin-bottom: 30px;
+}
+form input, form select {
+    padding: 8px;
+    margin-right: 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+form button {
+    padding: 8px 14px;
+    background: #0062ff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+#quiz-result, #diagnostic-result {
+    margin-top: 16px;
+    font-weight: 500;
+    color: #222;
+}
